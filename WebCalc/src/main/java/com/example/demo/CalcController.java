@@ -9,7 +9,7 @@ import jakarta.websocket.server.PathParam;
 @RestController
 public class CalcController {
 
-	@GetMapping("webcalculator/{op}/{a}/{b}")
+	@GetMapping("cal/{op}/{a}/{b}")
 	int calculation(@PathVariable String op, @PathVariable int a, @PathVariable int b) {
 
 		if (op.equals("add") ) {
